@@ -1,0 +1,240 @@
+Sub replaceinformuniverse()
+'
+' replaceinformuniverse Macro
+'
+Dim tempsheet As Worksheet
+
+Set tempsheet = ThisWorkbook.Sheets("tempsheet")
+
+FinalRow = tempsheet.Cells(Rows.Count, 1).End(xlUp).Row
+
+For i = 2 To FinalRow
+'
+
+    Sheets(tempsheet.Cells(i, 1).Value).Activate
+
+    Range("a1").Select
+    
+    '###Col B###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, B$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, B$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, B$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, B$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,B$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,B$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+
+    '###Col I###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, i$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, i$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, i$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, i$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,i$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,i$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+    '###Col P###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, p$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, p$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, p$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, p$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,p$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,p$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+        
+    '###Col w###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, w$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, w$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, w$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, w$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,w$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,w$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    
+    
+    
+    '###Col ad###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ad$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, ad$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ad$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ad$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ad$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ad$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+
+    '###Col ak###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ak$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, ak$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ak$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ak$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ak$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ak$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+
+
+    '###Col ar###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ar$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, ar$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ar$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ar$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ar$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ar$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+        
+
+    '###Col ay###
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ay$30), ""<>""" _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:= _
+        "INDEX('Consolidated Data'!$1:$1048576, 0, ay$30), ""<>"",", Replacement:="", _
+        LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:= _
+        False, ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ay$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0, ay$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ay$30),""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+    Cells.Replace What:="INDEX('Consolidated Data'!$1:$1048576, 0,ay$30), ""<>""," _
+        , Replacement:="", LookAt:=xlPart, SearchOrder:=xlByRows, MatchCase:= _
+        False, SearchFormat:=False, ReplaceFormat:=False, FormulaVersion:= _
+        xlReplaceFormula2
+
+Next i
+
+tempsheet.Activate
+
+MsgBox "Done"
+        
+End Sub
